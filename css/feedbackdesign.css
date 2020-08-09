@@ -1,0 +1,97 @@
+body{
+  font-size: 1.5em;
+  font-family: Quicksand;
+  color: white;
+  background-image:url(https://images.pexels.com/photos/594452/pexels-photo-594452.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header{
+  text-align: center;
+  text-shadow: 2px 3px rgba(0,0,0,0.6);
+}
+
+nav{
+  margin:10px;
+}
+
+nav a{
+  color:white;
+  text-shadow: 1px 1px rgba(0,0,0,0.7);
+  text-decoration: none;
+  padding:5px;
+}
+
+nav a:hover{
+  color:rgba(0,0,0,0.6);
+}
+
+/*position:relative to contain submit button in the parent container, or else it will float out of the container*/
+form{
+  position:relative;
+  margin:auto;
+  background-color:rgba(0,0,0,0.5);
+  padding:10px;
+  width:70%;
+}
+
+/*styling the form*/
+input{
+  width:20vw;
+  height:2vw;
+}
+
+ul{
+  list-style: none;
+}
+
+li{
+  margin-bottom: 20px;
+}
+
+label{
+  margin-right: 10px;
+}
+
+/*position:absolute because to madjust the position of the submit button*/
+button{
+  position: absolute;
+  right:10px;
+  bottom:10px;
+  border:solid 1px white;
+  padding:8px;
+  background-color: rgba(0,0,0,0);
+  color:white;
+  cursor: pointer;
+}
+
+button:hover{
+  animation-name: button-hover;
+  animation-fill-mode: forwards;
+  animation-duration: 0.5s;
+}
+
+@keyframes button-hover {
+  100%{
+    background-color: white;
+    color:black;
+  }
+}
+
+/*under 800px, the form and navigation bar is displayed as block elements*/
+@media (max-width:800px){
+  nav a{
+    display: block;
+    text-align: center;
+    background-color: rgba(0,0,0,0.5)
+  }
+  input{
+    display: block;
+    height:20px;
+    width:200px;
+  }
+  #usercomment{
+    width:170px;
+  }
+}
