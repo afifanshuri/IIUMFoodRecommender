@@ -1,0 +1,136 @@
+body{
+  text-align: center;
+  background-color:rgb(84, 135, 219);
+  font-family:Quicksand;
+}
+
+/*logo placing*/
+.logo{
+  position: relative;
+  top:-25px;
+  display: none;
+}
+
+.logo>img{
+  position:absolute;
+  left:0;
+}
+
+header{
+  margin: 30px;
+}
+
+header>img{
+  width:100%;
+}
+
+nav{
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+}
+
+nav>a{
+  padding: 10px;
+  margin: 10px;
+  color:white;
+  text-decoration: none;
+  border-radius: 20px;
+}
+
+nav>a:hover{
+  background-color:white;
+  color:rgb(84, 135, 219);
+}
+
+/*cafe navigation cirlces*/
+.cafenav{
+  display:inline-block;
+  margin:20px;
+  position:relative;
+  cursor: pointer;
+}
+
+.dropdown{
+  position:absolute;
+  padding: 10px;
+  display: none;
+  width: 100%;
+  border-radius: 20%;
+}
+
+.cafeinfo{
+ position: fixed;
+ display:none;
+ width: 100%;
+ height: 100%;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ background-color: rgba(0,0,0,0.8);
+ z-index: 2;
+ cursor: pointer;
+}
+
+.cafedescr{
+  position: absolute;
+  font-size: 14px;
+  color: white;
+  background-color: rgba(0,0,0,0.9);
+  bottom: 50%;
+  right:50%;
+  transform: translate(50%,50%);
+  padding:10px;
+  box-sizing: border-box;
+}
+
+ul{
+  color:white;
+  list-style:none;
+}
+
+li:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+footer{
+  position:relative;
+  top:200px;
+  border-top:solid white;
+  padding:20px;
+  color:white;
+}
+
+footer a{
+  color:white;
+  text-decoration: none;
+  margin:10px;
+}
+
+footer a:hover{
+  text-decoration: underline;
+}
+
+/*media queries for screen less than 800px*/
+@media (max-width:800px) {
+
+  .logo>img{
+    position: relative;
+    top:30px;
+  }
+
+  nav>a{
+    font-size:13px;
+  }
+
+  .cafenav{
+    display:block;
+  }
+
+  .dropdown{
+    position:relative;
+  }
+
+}
